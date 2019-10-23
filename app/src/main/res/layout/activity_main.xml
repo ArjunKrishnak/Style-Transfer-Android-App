@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/SourceImageView"
+        android:layout_width="207dp"
+        android:layout_height="141dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.47"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@color/colorAccent" />
+
+    <ImageView
+        android:id="@+id/StyleImageView"
+        android:layout_width="207dp"
+        android:layout_height="141dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.47"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/SourceGalleryButton"
+        app:srcCompat="@color/colorAccent" />
+
+    <Button
+        android:id="@+id/ConvertButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="CONVERT"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.455"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/StyleGalleryButton" />
+
+    <Button
+        android:id="@+id/SourceGalleryButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="31dp"
+        android:layout_marginLeft="31dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="108dp"
+        android:layout_marginRight="108dp"
+        android:onClick="SourceImagePick"
+        android:text="GALLERY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/SourceCamButton"
+        app:layout_constraintTop_toBottomOf="@+id/SourceImageView" />
+
+    <Button
+        android:id="@+id/StyleCameraButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="96dp"
+        android:layout_marginLeft="96dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="31dp"
+        android:layout_marginRight="31dp"
+        android:onClick="StyleImageCapture"
+        android:text="CAMERA"
+        app:layout_constraintEnd_toStartOf="@+id/StyleGalleryButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/StyleImageView" />
+
+    <Button
+        android:id="@+id/StyleGalleryButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="31dp"
+        android:layout_marginLeft="31dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="108dp"
+        android:layout_marginRight="108dp"
+        android:onClick="StyleImagePick"
+        android:text="GALLERY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/StyleCameraButton"
+        app:layout_constraintTop_toBottomOf="@+id/StyleImageView" />
+
+    <Button
+        android:id="@+id/SourceCamButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="96dp"
+        android:layout_marginLeft="96dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="31dp"
+        android:layout_marginRight="31dp"
+        android:onClick="SourceImageCapture"
+        android:text="Camera"
+        app:layout_constraintEnd_toStartOf="@+id/SourceGalleryButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/SourceImageView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

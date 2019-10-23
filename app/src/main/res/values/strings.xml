@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">StyleTransfer</string>
+    <string name="AppName">STYLE IT</string>
+    <string name="SourceText">Select Source Image</string>
+    <string name="StyleText">Select Style Image</string>
+    <string name="permission_necessary">permission_necessary</string>
+    <string name="storage_permission_is_encessary_to_wrote_event">storage_permission_is_encessary_to_wrote_event</string>
+
+</resources>
